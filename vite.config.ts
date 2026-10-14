@@ -28,6 +28,9 @@ export default defineConfig({
         ]
       },
       workbox: {
+        // 새 버전을 올리면 다음 실행 때 바로 적용
+        skipWaiting: true,
+        clientsClaim: true,
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
         navigateFallbackDenylist: [/^\/__/],
         runtimeCaching: [
