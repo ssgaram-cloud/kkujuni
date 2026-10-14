@@ -1497,3 +1497,71 @@ img.viewer-img {
 label.btn {
   cursor: pointer;
 }
+
+/* ---------- 과목 전체 진도 기록 ---------- */
+.sp-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: -20px -16px 0;
+  padding: 14px 12px 16px 6px;
+}
+.sp-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.sp-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.sp-stats .card {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.sp-stats span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.sp-stats b {
+  font-size: 17px;
+}
+.sp-now {
+  border-width: 1.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sp-now-label {
+  font-size: 11px;
+  font-weight: 700;
+}
+.sp-now-progress {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.sp-now .btn {
+  margin-top: 6px;
+}
+.sp-date {
+  padding: 2px 2px 0;
+}
+.type-pill {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+@media (min-width: 900px) {
+  .sp-head {
+    margin: -28px -32px 0;
+    padding: 18px 28px 20px 20px;
+  }
+  .sp-stats {
+    max-width: 640px;
+  }
+}
