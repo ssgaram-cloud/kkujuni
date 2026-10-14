@@ -1,4 +1,4 @@
-export type SubjectId = 'FIN' | 'TAX' | 'ACC' | 'COM';
+export type SubjectId = 'ACC' | 'CA' | 'TAX' | 'FIN' | 'COM' | 'ETC';
 export type StudyType = 'LEC' | 'TXT' | 'PRB' | 'WRG' | 'MOC';
 
 /** 동기화 대상 레코드의 공통 필드 (PRD 10장) */
