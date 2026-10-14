@@ -7,7 +7,7 @@ import { ToastProvider, useRoute } from './components/ui';
 import { useSettings } from './lib/hooks';
 import { Home } from './pages/Home';
 import { NoteDetail, NoteEditor, NotesList } from './pages/Notes';
-import { Progress } from './pages/Progress';
+import { Progress, SubjectProgress } from './pages/Progress';
 import { Records } from './pages/Records';
 import { SettingsPage } from './pages/Settings';
 import { Stats } from './pages/Stats';
@@ -25,7 +25,7 @@ function Page({ route }: { route: string[] }) {
   const [a, b, c] = route;
   switch (a) {
     case 'progress':
-      return <Progress />;
+      return b ? <SubjectProgress id={b} /> : <Progress />;
     case 'stats':
       return <Stats />;
     case 'notes':
