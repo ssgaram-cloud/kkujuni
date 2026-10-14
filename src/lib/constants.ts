@@ -10,10 +10,12 @@ export interface SubjectInfo {
 }
 
 export const SUBJECTS: SubjectInfo[] = [
-  { id: 'FIN', name: '재정학', short: '재정', tag: '필수', color: '#0F766E', soft: '#E3F1EF' },
-  { id: 'TAX', name: '세법학개론', short: '세법', tag: '필수', color: '#1E40AF', soft: '#E5EBF8' },
-  { id: 'ACC', name: '회계학개론', short: '회계', tag: '필수', color: '#B45309', soft: '#F8EEE2' },
-  { id: 'COM', name: '상법', short: '상법', tag: '선택과목', color: '#6D28D9', soft: '#EFE8FB' }
+  { id: 'ACC', name: '01_재무', short: '재무', tag: '회계학개론', color: '#B45309', soft: '#F8EEE2' },
+  { id: 'CA', name: '02_원가', short: '원가', tag: '회계학개론', color: '#BE185D', soft: '#FBE7F0' },
+  { id: 'TAX', name: '03_세법', short: '세법', tag: '세법학개론', color: '#1E40AF', soft: '#E5EBF8' },
+  { id: 'FIN', name: '04_재정', short: '재정', tag: '재정학', color: '#0F766E', soft: '#E3F1EF' },
+  { id: 'COM', name: '05_상법', short: '상법', tag: '선택과목', color: '#6D28D9', soft: '#EFE8FB' },
+  { id: 'ETC', name: '06_기타', short: '기타', tag: '기타', color: '#4B5563', soft: '#ECEDEF' }
 ];
 
 export const SUBJECT: Record<SubjectId, SubjectInfo> = Object.fromEntries(SUBJECTS.map((s) => [s.id, s])) as Record<
